@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen Js</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+    </style>
 </head>
 <body>
-    
+<h1>Conversor de monedas nacional</h1>
+
+<div id="Caja-input">
+<h2>Moneda Nacional: Peso (CLP)</h2>
+<input id="input-pesochileno" type="number" placeholder="Ingresa un monto"></input>
+
+</div>
+
+<div>
+<h3>Moneda a convertir</h3>
+
+<div id="caja-select">
+    <label>Selecciona moneda
+        <select id="select-moneda">
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+        </select>
+    </label>
+
+    <br/>
+    <button id="boton-convertir">Convertir</button>
+    <p id="resultado-visible" class="hidden">Resultado: $<span></span></p>
+
+<div id="grafico" class="hidden">
+<canvas id="historialConversion"></canvas>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./assets/scripts/scripts.js"></script>
 </body>
 </html>
